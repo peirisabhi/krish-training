@@ -3,11 +3,11 @@ import java.util.Scanner;
 class Application{
 	public static void main(String[] args){
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter Distance");
+		System.out.println("Enter Distance (m) ");
 
 		int distance = scanner.nextInt();
 
-		System.out.println(distance);
+		//System.out.println(distance);
 		int x = 0;
 		int time = 0;
 		while(true){
@@ -30,8 +30,8 @@ class Application{
 			  break;
 
 		}
-		System.out.println(x);
-		System.out.println("Time is " + time);
+		System.out.println("Jumped distance " + x + "m");
+		System.out.println("Time is " + time + "s");
 
 	}
 
