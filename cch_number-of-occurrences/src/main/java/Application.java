@@ -16,15 +16,17 @@ public class Application {
 
             char[] letters = scanner.next().toLowerCase().toCharArray();
 
-            int charValues[][] = new int[256][1];
+            int charValues[][] = new int[256][2];
 
             for(int x = 0; x< letters.length; x++){
-                System.out.println(letters[x]);
-                charValues[letters[x]][0]++;
+                charValues[letters[x]][0] = letters[x];
+                charValues[letters[x]][1]++;
             }
 
             for (int[] charVal : charValues){
-                System.out.println(charVal.length + " - " );
+                if(charVal[0] != 0) {
+                    System.out.println((char) charVal[0] + " - " + charVal[1]);
+                }
             }
 
 
