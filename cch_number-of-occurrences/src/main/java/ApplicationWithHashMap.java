@@ -17,9 +17,8 @@ public class ApplicationWithHashMap {
 
         try{
             Map<Character, Integer> occurrences = new HashMap<>();
-            System.out.println(occurrences.size());
 
-            char[] letters = scanner.next().toCharArray();
+            char[] letters = scanner.next().toLowerCase().toCharArray();
 
             for (char letter : letters){
                 if (occurrences.size() == 0){
@@ -36,7 +35,6 @@ public class ApplicationWithHashMap {
             for (Map.Entry<Character, Integer> occurrence : occurrences.entrySet()) {
                 System.out.println(occurrence.getKey() + " - " + occurrence.getValue());
             }
-            System.out.println(occurrences.size());
 
         }catch (Exception e){
 
