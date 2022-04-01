@@ -8,7 +8,7 @@ package example2;
  */
 public class LambdaApplication {
     public static void main(String[] args) {
-        Square square = width -> width*width;
+        Square square = width -> width*width;  // only can use single method interfaces
 
         System.out.println(square.calculate(10));
     }
