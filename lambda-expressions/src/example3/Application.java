@@ -18,7 +18,7 @@ public class Application {
         numbers.add(4);
         numbers.add(5);
 
-        Consumer<Integer> method = (number) -> {  // we can store lambda expression as a Consumer type variable. 
+        Consumer<Integer> method = (number) -> {  // we can store lambda expression as a Consumer type variable.
             System.out.println(number);
         };
 
