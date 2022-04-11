@@ -59,7 +59,7 @@ public class Graph<T> {
     }
 
 
-    void BFS(T startingNode) {
+    void getBfs(T startingNode) {
 
         Queue<T> queue = new LinkedList<>();
         List<T> bfs = new ArrayList<>();

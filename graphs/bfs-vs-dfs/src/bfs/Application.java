@@ -25,7 +25,7 @@ public class Application {
 //        graph.getEdgesCount();
 
 
-        graph.BFS("A");
+        graph.getBfs("A");
 
     }
 }
