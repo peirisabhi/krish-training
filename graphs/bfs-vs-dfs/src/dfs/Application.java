@@ -1,6 +1,5 @@
 package dfs;
 
-import bfs.Graph;
 
 /**
  * Created by Intellij.
@@ -12,17 +11,17 @@ public class Application {
 
     public static void main(String[] args) {
 
-        bfs.Graph<String> graph = new Graph<>();
-
-        graph.addEdge("A", "B", true);
-        graph.addEdge("B", "G", true);
-        graph.addEdge("B", "C", true);
-        graph.addEdge("G", "I", true);
-        graph.addEdge("C", "D", true);
-        graph.addEdge("D", "E", true);
-        graph.addEdge("E", "F", true);
-
-        System.out.println(graph.toString());;
+//        graph.Graph<String> graph = new Graph<Object>();
+//
+//        graph.addEdge("A", "B", true);
+//        graph.addEdge("B", "G", true);
+//        graph.addEdge("B", "C", true);
+//        graph.addEdge("G", "I", true);
+//        graph.addEdge("C", "D", true);
+//        graph.addEdge("D", "E", true);
+//        graph.addEdge("E", "F", true);
+//
+//        System.out.println(graph.toString());;
 
     }
 

@@ -1,5 +1,7 @@
 package bfs;
 
+import graph.Graph;
+
 /**
  * Created by Intellij.
  * Author: abhis
@@ -24,10 +26,11 @@ public class Application {
 //        graph.getVertexCount();
 //        graph.getEdgesCount();
 
+        Bfs<String> bfs = new Bfs<>();
 
-        graph.getBfs("A");
-        graph.getBfs("B");
-        graph.getBfs("G");
+        bfs.getBfs("A", graph);
+        bfs.getBfs("B", graph);
+        bfs.getBfs("G", graph);
 
     }
 }
