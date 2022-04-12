@@ -1,6 +1,8 @@
 package dfs;
 
 
+import graph.Graph;
+
 /**
  * Created by Intellij.
  * Author: abhis
@@ -11,17 +13,21 @@ public class Application {
 
     public static void main(String[] args) {
 
-//        graph.Graph<String> graph = new Graph<Object>();
-//
-//        graph.addEdge("A", "B", true);
-//        graph.addEdge("B", "G", true);
-//        graph.addEdge("B", "C", true);
-//        graph.addEdge("G", "I", true);
-//        graph.addEdge("C", "D", true);
-//        graph.addEdge("D", "E", true);
-//        graph.addEdge("E", "F", true);
-//
+        graph.Graph<String> graph = new Graph<>();
+
+        graph.addEdge("A", "B", true);
+        graph.addEdge("B", "G", true);
+        graph.addEdge("B", "C", true);
+        graph.addEdge("G", "I", true);
+        graph.addEdge("C", "D", true);
+        graph.addEdge("D", "E", true);
+        graph.addEdge("E", "F", true);
+
 //        System.out.println(graph.toString());;
+
+        new Dfs<>(graph).getDfs("A");
+        new Dfs<>(graph).getDfs("I");
+        new Dfs<>(graph).getDfs("F");
 
     }
 
