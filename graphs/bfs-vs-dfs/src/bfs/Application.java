@@ -11,14 +11,14 @@ public class Application {
     {
         Graph<String> graph = new Graph<>();
 
-        graph.addEdge("A", "B");
-        graph.addEdge("A", "C");
-        graph.addEdge("B", "D");
-        graph.addEdge("B", "G");
-        graph.addEdge("D", "G");
-        graph.addEdge("C", "E");
-        graph.addEdge("C", "F");
-        graph.addEdge("E", "H");
+        graph.addEdge("A", "B", true);
+        graph.addEdge("A", "C", true);
+        graph.addEdge("B", "D", true);
+        graph.addEdge("B", "G", true);
+        graph.addEdge("D", "G", true);
+        graph.addEdge("C", "E", true);
+        graph.addEdge("C", "F", true);
+        graph.addEdge("E", "H", true);
 
 //        System.out.println("Graph:\n" + graph.toString());
 //        graph.getVertexCount();
@@ -26,6 +26,8 @@ public class Application {
 
 
         graph.getBfs("A");
+        graph.getBfs("B");
+        graph.getBfs("G");
 
     }
 }
