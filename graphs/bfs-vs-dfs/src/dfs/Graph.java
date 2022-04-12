@@ -31,15 +31,17 @@ public class Graph<T> {
                 + " vertex");
     }
 
-    public void getEdgesCount()
-    {
-        int count = 0;
-        for (T v : map.keySet()) {
-            count += map.get(v).size();
-        }
-        System.out.println("The graph has "
-                + count
-                + " edges.");
+    public void addEdge(T source, T value, boolean bidirectional) {
+        if (!map.containsKey(source))
+            addVertex(source);
+
+        if (!map.containsKey(value))
+            addVertex(value);
+
+        map.get(source).add(value);
+        if (bidirectional)
+            map.get(value).add(source);
+
     }
 
     @Override
