@@ -9,5 +9,4 @@ spring:
           uri: https://github.com/peirisabhi/spring-cloud-config-store.git
           default-label: master
           search-paths: '*service'
-          repos:
 
